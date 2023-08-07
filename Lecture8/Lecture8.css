@@ -1,0 +1,48 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Post container styles */
+.post-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Post card styles */
+.post {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* User info styles */
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-id, .post-id {
+  font-weight: bold;
+}
+
+/* Post title styles */
+.post-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Post content styles */
+.post-content {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
