@@ -21,10 +21,15 @@ function App() {
     }
   }, [nightMode]);
 
+    const handleButtonClick = () => {
+    handleMode();
+    setSavedMode(!nightMode);
+  };
+
   return (
     <div>
       {width > 576 ? (
-        <button onClick={() => handleMode()}>
+        <button onClick={() => handleButtonClick()}>
           {nightMode ? `Night Mode` : `Light Mode`}
         </button>
       ) : (
