@@ -51,7 +51,7 @@ const Tasks = () => {
           checked={task.checked}
           owner = {task.owner}
           deadline = {task.deadline}
-          id={task.id}
+          id={task._uuid}
           key={task.id}
 
         />
