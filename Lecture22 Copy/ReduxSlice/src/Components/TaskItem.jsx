@@ -13,7 +13,7 @@ const TaskItem = ({ task,checked, key, id, owner, deadline}) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   
-  function deleteTask() {
+  function delete() {
  dispatch(deleteTask(url))
  .then(action => { if (!action.payload)
  console.log('Error', action.error)}) 
@@ -29,7 +29,7 @@ const TaskItem = ({ task,checked, key, id, owner, deadline}) => {
       <p> {language === 'GE' ? georgian.deadline: english.deadline}: {deadline}</p>
       <p> {language === 'GE' ? georgian.completed: english.completed}: {checked.toString()}</p>
       <Link to = {`/edit/${id}`}> {language === 'GE' ? georgian.editTask: english.editTask} </Link>
-      <button onClick={() => deleteTask()}>{language === 'GE' ? georgian.delete: english.delete}</button>
+      <button onClick={() => delete()}>{language === 'GE' ? georgian.delete: english.delete}</button>
     </div>
   );
 };
